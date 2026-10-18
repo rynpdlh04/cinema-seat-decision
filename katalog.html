@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Kursi | CinemaSeat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">CinemaSeat</a>
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="katalog.html">Dataset</a>
+            <a href="simulasi.html">Simulasi</a>
+            <a href="demo.html">Pengujian</a>
+        </nav>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar">
+            <h2>Menu Proyek</h2>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil Mahasiswa</a></li>
+                <li><a href="katalog.html">Dataset Kursi</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="simulasi.html">Simulasi Kursi</a></li>
+                <li><a href="hasil.html">Hasil Keputusan</a></li>
+                <li><a href="tentang.html">Aturan Sistem</a></li>
+                <li><a href="demo.html">Pengujian</a></li>
+                <li><a href="frameset-demo.html">Demo Frameset</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section class="info-section">
+                <p class="eyebrow">DATA MANAGEMENT</p>
+                <h1>Dataset Kursi Bioskop</h1>
+                <p>
+                    Dataset ini menjadi sumber data untuk tabel,
+                    peta kursi, dan sistem rekomendasi.
+                </p>
+
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <span>Total kursi</span>
+                        <strong id="totalSeats">0</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span>Tersedia</span>
+                        <strong id="availableSeats">0</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span>Tidak tersedia</span>
+                        <strong id="unavailableSeats">0</strong>
+                    </article>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <caption>
+                            Tabel 1. Data kursi awal CinemaSeat
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID Kursi</th>
+                                <th scope="col">Baris</th>
+                                <th scope="col">Nomor</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Jadwal</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="seatTableBody">
+                            <tr>
+                                <td colspan="6">Memuat dataset...</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="6" id="tableSummary">
+                                    Ringkasan dataset akan ditampilkan di sini.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <h2>Arti Status Kursi</h2>
+                <ul>
+                    <li><strong>Tersedia:</strong> dapat dipertimbangkan sistem.</li>
+                    <li><strong>Terisi:</strong> tidak dapat direkomendasikan.</li>
+                    <li><strong>Dipesan:</strong> tidak dapat dipesan kembali.</li>
+                </ul>
+
+                <p>
+                    <a class="button" href="simulasi.html">
+                        Lanjut ke Simulasi
+                    </a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CinemaSeat Decision System.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -198,3 +198,97 @@ a:hover {
         padding: 24px;
     }
 }
+
+
+/* Statistik dataset */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.stat-card span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.stat-card strong {
+    font-size: 1.8rem;
+}
+
+/* Tabel dataset */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 13px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    color: #1e293b;
+    background: #eff6ff;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+tfoot td {
+    font-weight: bold;
+    background: #f1f5f9;
+}
+
+.status {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-available {
+    color: #15803d;
+}
+
+.status-occupied {
+    color: #b91c1c;
+}
+
+.status-booked {
+    color: #92400e;
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
